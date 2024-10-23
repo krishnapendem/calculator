@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>
+            calculator
+        </title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="calculator">
+                <form>
+                    <div>
+                        <h5 style="color: rgb(255, 0, 179); margin-left: 190px; font-size: larger; margin-bottom: 5px;">Casio.2024</h5>
+                    </div>
+                    <div class="display">
+                        <input type="text" name="display">
+                    </div>
+
+                    <div class="buttons">
+                        <div class="padding">
+                            <input type="button" value="ac" onclick="display.value = '' " style="color: blue;font-weight: 600;" id="btn">
+                            <input type="button" value="del" onclick="display.value = display.value.toString().slice(0,-1)" style="color: blue;font-weight: 600;" id="btn">
+                            <input type="button" value="." onclick="display.value += '.' " style="background-color: rgb(240, 173, 49);" id="btn">
+                            <input type="button" value="/" onclick="display.value += '/' " style="background-color: rgb(240, 173, 49);" id="btn">
+                        </div>
+                        <div class="padding">
+                            <input type="button" value="1" onclick="display.value += '1' " id="btn">
+                            <input type="button" value="2" onclick="display.value += '2' " id="btn">
+                            <input type="button" value="3" onclick="display.value += '3' " id="btn">
+                            <input type="button" value="+" onclick="display.value += '+' " style="background-color: rgb(240, 173, 49);" id="btn">
+                        </div>
+                        <div class="padding">
+                            <input type="button" value="4" onclick="display.value += '4' " id="btn">
+                            <input type="button" value="5" onclick="display.value += '5' " id="btn">
+                            <input type="button" value="6" onclick="display.value += '6' " id="btn">
+                            <input type="button" value="-" onclick="display.value += '-' " style="background-color: rgb(240, 173, 49);" id="btn">
+                        </div>
+                        <div class="padding">
+                            <input type="button" value="7" onclick="display.value += '7' " id="btn">
+                            <input type="button" value="8" onclick="display.value += '8' " id="btn">
+                            <input type="button" value="9" onclick="display.value += '9' " id="btn">
+                            <input type="button" value="*" onclick="display.value += '*' " style="background-color: rgb(240, 173, 49);" id="btn">
+                        </div>
+                        <div class="padding">
+                            <input type="button" value="00" onclick="display.value += '00' " id="btn">
+                            <input type="button" value="0" onclick="display.value += '0' " id="btn">
+                            <input type="button" value="=" style="width: 145px; background-color: rgb(152, 232, 152);" onclick="display.value = eval(document.getElementsByName('display')[0].value)" id="equal">
+                        </div>
+
+
+
+
+                    </div>
+
+
+                    
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
